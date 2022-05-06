@@ -58,7 +58,7 @@ public class RequestHandler extends Thread {
 			} else {
 				// method: POST, PUT, DELETE, HEAD, CONNECT
 				// SimpleHttpServer에서는 무시(400 Bad Request 응답)
-				response403Error(outputStream, tokens[1], tokens[2]);
+				response400Error(outputStream, tokens[1], tokens[2]);
 			}
 			
 			// 예제 응답입니다.
