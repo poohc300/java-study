@@ -16,6 +16,8 @@ public class TCPServer {
 		try {
 			//1. 서버소켓 생성
 			serverSocket = new ServerSocket();
+			//1.1 TIME_WAIT 상태에서 서버에서 재 실행이 가능하게 함
+			
 			
 			//2. 바인딩(binding)
 			//	 Socket에 InetSocketAddress(IP Address + Port)를 바인딩한다.
